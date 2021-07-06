@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.calender {
+  // display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: 'red';
+  width: 100%;
+  height: 300px;
+  border: $basic-border;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+    border: $basic-border;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border: $basic-border;
+    &--time {
+      width: 200px;
+      height: 50px;
+    }
+    &--month {
+      width: 200px;
+      height: 50px;
+    }
+    &--days {
+      display: flex;
+      flex: 1;
+      height: calc(100% - 50px);
+    }
+
+    &--buttons {
+      height: 50px;
+    }
+  }
+
+  &__day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    border: $basic-border;
+    &-past {
+      @extend .calender__day;
+      background-color: gray;
+    }
+    &-current {
+      @extend .calender__day;
+      background-color: rgb(96, 209, 96);
+    }
+    &-future {
+      @extend .calender__day;
+      background-color: rgb(225, 225, 107);
+    }
+  }
+}

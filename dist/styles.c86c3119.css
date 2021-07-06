@@ -1,0 +1,77 @@
+.calender {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: "red";
+  width: 100%;
+  height: 300px;
+  border: 1px solid #000000;
+}
+.calender__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #000000;
+}
+.calender__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  border: 1px solid #000000;
+}
+.calender__container--time {
+  width: 200px;
+  height: 50px;
+}
+.calender__container--month {
+  width: 200px;
+  height: 50px;
+}
+.calender__container--days {
+  display: flex;
+  flex: 1;
+  height: calc(100% - 50px);
+}
+.calender__container--buttons {
+  height: 50px;
+}
+.calender__day, .calender__day-future, .calender__day-current, .calender__day-past {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  border: 1px solid #000000;
+}
+.calender__day-past {
+  background-color: gray;
+}
+.calender__day-current {
+  background-color: #60d160;
+}
+.calender__day-future {
+  background-color: #e1e16b;
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+}
+.button--calender-left {
+  background-color: #4c85dc;
+}
+.button--calender-right {
+  background-color: #4c85dc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=/styles.c86c3119.css.map */
